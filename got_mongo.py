@@ -17,4 +17,5 @@ def t1():
     print(list(c.list_databases()))
 
 
-t1()
+if __name__ == "__main__":
+    t1()

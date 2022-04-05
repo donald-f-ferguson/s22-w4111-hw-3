@@ -23,5 +23,5 @@ def t1():
         print("Properties = ", dict(r['p']))
 
 
-
-t1()
+if __name__ == "__main__":
+    t1()
