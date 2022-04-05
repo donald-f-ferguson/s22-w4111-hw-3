@@ -1,10 +1,12 @@
-from got_graph_v2 import GotGraph
+from neo4j_old.got_graph_v2 import GotGraph
+
+import config
 
 
 def get_graph():
 
-    g = GotGraph(url="neo4j+s://47647603.databases.neo4j.io:7687",
-                 auth = ("neo4j", "IbqRvHo2SB-J90ITWdsA5rsXBHvT_HvIUATtUNKAjLg")
+    g = GotGraph(url=config.neo_url,
+                 auth = config.neo_auth
                  )
     return g
 
